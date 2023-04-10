@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E commerce website</title>
+    <link rel="shortcut icon" href="./assets/img/Untitled.ico" type="image/x-icon">
+    <!-- ====fontawesme cdn===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- =====bootstrap cdn=== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custon css====== -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- =====header section start====== -->
+    <!-- -----navbar------ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase text-black">
+              <li class="nav-item">
+                <a class="nav-link fw-bolder" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="page.html">pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="blog.html">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html">contact us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control bg-light border-0 border-bottom" type="search" placeholder="Search...." aria-label="Search">
+              <button class="btn btn-outline-danger me-4" type="submit">Search</button>
+            </form>
+            <div class="nav-icon mt-sm-4 mt-lg-0">
+               <i class="fa-solid fa-user"></i>
+                <button type="button" class="btn btn-none position-relative">
+                  <i class="fa-solid fa-heart"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+                <button type="button" class="btn btn-none position-relative">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button> 
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ------navbar end-------- -->
+      <!-- hero section--------- -->
+      <section id="hero">
+        <h1 class="text-center text-uppercase fw-bold text-white" style="padding-top: 250px;">Shop</h1>
+      </section>
+      <!-- ----hero end----- -->
+    <!-- =====header section end===== -->
+    <!-- =====filter section start====== -->
+    <section id="product-filter" class="my-5 py-5 mx-4">
+        <div class="row">
+            <div class="col-4">
+                <div class="color">
+                    <h4>Filter by color</h4>
+                    <div class="row mt-2">
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-muted" for="flexCheckIndeterminate">
+                                    Black, brown
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3 text-muted">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-muted" for="flexCheckIndeterminate">
+                                    Blue
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3 text-muted">
+                            <span>(1)</span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-muted" for="flexCheckIndeterminate">
+                                    Dark grey
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3 text-muted">
+                            <span>(1)</span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-muted" for="flexCheckIndeterminate">
+                                    Pink
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3 text-muted">
+                            <span>(3)</span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-muted" for="flexCheckIndeterminate">
+                                    Green
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3 text-muted">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-muted" for="flexCheckIndeterminate">
+                                    Red
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3 text-muted">
+                            <span>(1)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="size mt-5">
+                    <h4>Filter by size</h4>
+                    <div class="row mt-2">
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-muted" for="flexCheckIndeterminate">
+                                    XS
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3 text-muted">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-muted" for="flexCheckIndeterminate">
+                                    SM
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3 text-muted">
+                            <span>(1)</span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-muted" for="flexCheckIndeterminate">
+                                    LG
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3 text-muted">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-muted" for="flexCheckIndeterminate">
+                                    XL
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3 text-muted">
+                            <span>(3)</span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-muted" for="flexCheckIndeterminate">
+                                    XXL
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3 text-muted">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label text-muted" for="flexCheckIndeterminate">
+                                    XXL
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-3 text-muted">
+                            <span>(1)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="categoties mt-5">
+                    <div class="Categories-header">
+                        <h4 class="text-capitalize fw-bold mb-3 mt-3">Categories</h4>
+                      </div>
+                      <a class="text-decoration-none" href=""><li class="list-unstyled mt-4 text-capitalize text-muted">coats & jaackets</li></a>
+                      <a class="text-decoration-none" href=""><li class="list-unstyled mt-2 text-capitalize text-muted">dressware</li></a>
+                      <a class="text-decoration-none" href=""><li class="list-unstyled mt-2 text-capitalize text-muted"> blazers </li></a>
+                      <a class="text-decoration-none" href=""><li class="list-unstyled mt-2 text-capitalize text-muted">kids</li></a>
+                      <a class="text-decoration-none" href=""><li class="list-unstyled mt-2 text-capitalize text-muted"> new arrivales</li></a>
+                </div>
+                <div class="follow">
+                    <h4 class="mt-5 pt-5">Follow on</h4>
+                    <div class="shop-icon mt-4">
+                        <i class="fa-brands fa-facebook p-2 border rounded-pill"></i>
+                        <i class="fa-brands fa-twitter p-2 border rounded-pill"></i>
+                        <i class="fa-brands fa-youtube p-2 border rounded-pill"></i>
+                        <i class="fa-brands fa-instagram p-2 border rounded-pill"></i>
+                      </div>
+                </div>
+                <div class="tages mt-5">
+                    <ul class="list-unstyled">
+                        <li class="list-inline-item mb-3"><a class="btn btn-outline-danger text-decoration-none text-muted" href="">Accessories</a></li>
+                        <li class="list-inline-item ms-2 mb-3"><a class="btn btn-outline-danger text-decoration-none text-muted" href="">Fashion</a></li>
+                        <li class="list-inline-item ms-2 mb-3"><a class="btn btn-outline-danger text-decoration-none text-muted" href="">Shoes</a></li><br>
+                        <li class="list-inline-item"><a class="btn btn-outline-danger text-decoration-none text-muted" href="">Woman</a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-danger text-decoration-none text-muted" href="">Man</a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-danger text-decoration-none text-muted" href="">Kids</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="filters-form">
+                    <div class="row">
+                        <h4 class="mb-4">products filter</h4>
+                        <div class="col-4">
+                            <input type="text" class="form-control text-muted p-2" id="validationDefault01" value="Search products..." required>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select text-muted" id="validationDefault04" required>
+                                <option selected disabled value="">Accessories...</option>
+                                <option>belts</option>
+                                <option>chair</option>
+                                <option>sticks</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <select class="form-select text-muted" id="validationDefault04" required>
+                                <option selected disabled value="">Any rating</option>
+                                <option>5 star</option>
+                                <option>4 star</option>
+                                <option>3 star</option>
+                            </select>
+                        </div>
+                        <div class="col-6 mt-4">
+                            <select class="form-select text-muted" id="validationDefault04" required>
+                                <option selected disabled value="">Any color</option>
+                                <option>Black ,brown</option>
+                                <option>red</option>
+                                <option>green</option>
+                            </select>
+                        </div>
+                        <div class="col-6 mt-4">
+                            <select class="form-select text-muted" id="validationDefault04" required>
+                                <option selected disabled value="">Any size</option>
+                                <option>L</option>
+                                <option>Sm</option>
+                                <option>M</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-muted fw-bold mt-5 text-capitalize">show all results</p>
+                <div class="row mt-5">
+                    <div class="col-4">
+                      <div class="card me-3 mb-5 border-0">
+                         <div class="card-image">
+                            <div class="card-icon">
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-heart"></i></a>
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-eye"></i></a>
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-search"></i></a>
+                            </div>
+                            <img class="img-fluid" src="./assets/img/00.jpg" alt="">
+                            <div class="card-color">
+                                <li class="list-inline-item"><div class="red" style="background: var(--color-primary); height: 25px; width: 25px;"></div></li>
+                                <li class="list-inline-item"><div class="red" style="background: var(--color-olive); height: 25px; width: 25px;"></div></li>
+                                <li class="list-inline-item"><div class="red" style="background: blue; height: 25px; width: 25px;"></div></li>
+                            </div>
+                         </div>
+                         <div class="card-body text-center">
+                          <a class="text-decoration-none card-link" href="">Extra Fine Wool Jumpers</a>
+                          <br>
+                          <strong class="text-uppercase">clothing</strong>
+                          <h6 class="text-muted mt-3">$12.99<span class="badge bg-secondary text bg-dark">20%</span></h6>
+                         </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card me-3 border-0">
+                         <div class="card-image">
+                            <div class="card-icon">
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-heart"></i></a>
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-eye"></i></a>
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-search"></i></a>
+                            </div>
+                            <img class="img-fluid" src="./assets/img/003.jpg" alt="">
+                            <div class="card-color">
+                                <li class="list-inline-item"><div class="red" style="background: var(--color-primary); height: 25px; width: 25px;"></div></li>
+                                <li class="list-inline-item"><div class="red" style="background: var(--color-olive); height: 25px; width: 25px;"></div></li>
+                                <li class="list-inline-item"><div class="red" style="background: blue; height: 25px; width: 25px;"></div></li>
+                            </div>
+                         </div>
+                         <div class="card-body text-center">
+                          <a class="text-decoration-none card-link" href="">Men’s Softshell Hooded Jacket</a>
+                          <br>
+                          <strong class="text-uppercase">Coats & jackets</strong>
+                          <h6 class="text-muted mt-3">$12.99<span class="badge bg-secondary text bg-dark">50%</span></h6>
+                         </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card me-3 mb-5 border-0">
+                         <div class="card-image">
+                            <div class="card-icon">
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-heart"></i></a>
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-eye"></i></a>
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-search"></i></a>
+                            </div>
+                            <img class="img-fluid" src="./assets/img/002.jpg" alt="">
+                            <div class="card-color">
+                                <li class="list-inline-item"><div class="red" style="background: var(--color-primary); height: 25px; width: 25px;"></div></li>
+                                <li class="list-inline-item"><div class="red" style="background: var(--color-olive); height: 25px; width: 25px;"></div></li>
+                                <li class="list-inline-item"><div class="red" style="background: blue; height: 25px; width: 25px;"></div></li>
+                            </div>
+                         </div>
+                         <div class="card-body text-center">
+                          <a class="text-decoration-none card-link" href="">Men’s Standard Fit Crew T-Shirt</a>
+                          <br>
+                          <strong class="text-uppercase">Clothing</strong>
+                          <h6 class="text-muted mt-3">$12.99<span class="badge bg-secondary text bg-dark">30%</span></h6>
+                         </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card me-3 mb-5 border-0">
+                         <div class="card-image">
+                            <div class="card-icon">
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-heart"></i></a>
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-eye"></i></a>
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-search"></i></a>
+                            </div>
+                            <img class="img-fluid" src="./assets/img/005.jpg" alt="">
+                            <div class="card-color">
+                                <li class="list-inline-item"><div class="red" style="background: var(--color-primary); height: 25px; width: 25px;"></div></li>
+                                <li class="list-inline-item"><div class="red" style="background: var(--color-olive); height: 25px; width: 25px;"></div></li>
+                                <li class="list-inline-item"><div class="red" style="background: blue; height: 25px; width: 25px;"></div></li>
+                            </div>
+                         </div>
+                         <div class="card-body text-center">
+                          <a class="text-decoration-none card-link" href="">Women’s Velour Hoodie</a>
+                          <br>
+                          <strong class="text-uppercase">Athleisure </strong>
+                          <h6 class="text-muted mt-3">$12.99<span class="badge bg-secondary text bg-dark">31%</span></h6>
+                         </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card me-3 mb-5 border-0">
+                         <div class="card-image">
+                            <div class="card-icon">
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-heart"></i></a>
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-eye"></i></a>
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-search"></i></a>
+                            </div>
+                            <img class="img-fluid" src="./assets/img/05.jpg" alt="">
+                            <div class="card-color">
+                                <li class="list-inline-item"><div class="red" style="background: var(--color-primary); height: 25px; width: 25px;"></div></li>
+                                <li class="list-inline-item"><div class="red" style="background: var(--color-olive); height: 25px; width: 25px;"></div></li>
+                                <li class="list-inline-item"><div class="red" style="background: blue; height: 25px; width: 25px;"></div></li>
+                            </div>
+                         </div>
+                         <div class="card-body text-center">
+                          <a class="text-decoration-none card-link" href="">La-ta-da Boho Chic Head Wrap</a>
+                          <br>
+                          <strong class="text-uppercase">Athleisure </strong>
+                          <h6 class="text-muted mt-3">$12.99<span class="badge bg-secondary text bg-dark">31%</span></h6>
+                         </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card border-0">
+                         <div class="card-image">
+                            <div class="card-icon">
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-heart"></i></a>
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-eye"></i></a>
+                                <a class="rounded-pill p-2 bg-white" href=""><i class="fa-solid fa-search"></i></a>
+                            </div>
+                            <img src="./assets/img/08.jpeg" alt="" style="height: 315px; width: 100%;">
+                            <div class="card-color">
+                                <li class="list-inline-item"><div class="red" style="background: var(--color-primary); height: 25px; width: 25px;"></div></li>
+                                <li class="list-inline-item"><div class="red" style="background: var(--color-olive); height: 25px; width: 25px;"></div></li>
+                                <li class="list-inline-item"><div class="red" style="background: blue; height: 25px; width: 25px;"></div></li>
+                            </div>
+                         </div>
+                         <div class="card-body text-center">
+                          <a class="text-decoration-none card-link" href="">Women’s Accessories Vegan Leather Mini </a>
+                          <br>
+                          <strong class="text-uppercase">Backpack</strong>
+                          <h6 class="text-muted mt-3">$12.99<span class="badge bg-secondary text bg-dark">22%</span></h6>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mx-auto">
+            <div class="col-12">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item">
+                        <a class="page-link text-muted" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link text-muted" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link text-muted" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link text-muted" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link text-muted" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </section>
+    <!-- =====filter section end====== -->
+    <!-- ======footer sections start===== -->
+        <footer id="footer" class="mt-5 pt-5">
+            <div class="row">
+              <div class="col-3">
+                <div class="footer-headline">
+                  <h5 class="text-capitalize fw-bold mb-3">Support</h5>
+                </div>
+                <a class="text-decoration-none" href=""><li>orderlist</li></a>
+                <a class="text-decoration-none" href=""><li>wishlist</li></a>
+                <a class="text-decoration-none" href=""><li>compaier products</li></a>
+                <a class="text-decoration-none" href=""><li>my account</li></a>
+                <a class="text-decoration-none" href=""><li>address</li></a>
+              </div>
+              <div class="col-3">
+                <div class="footer-headline">
+                  <h5 class="text-capitalize fw-bold mb-3">Useful Links</h5>
+                </div>
+                <a class="text-decoration-none" href=""><li class="list-unstyled">home</li></a>
+                <a class="text-decoration-none" href=""><li class="list-unstyled">about us</li></a>
+                <a class="text-decoration-none" href=""><li class="list-unstyled">shop now</li></a>
+                <a class="text-decoration-none" href=""><li class="list-unstyled">privacy policy</li></a>
+                <a class="text-decoration-none" href=""><li class="list-unstyled">contact us</li></a>
+              </div>
+              <div class="col-3">
+                <div class="Information">
+                  <h5 class="text-capitalize fw-bold mb-3">Information</h5>
+                </div>
+                <a class="text-decoration-none" href=""><li class="list-unstyled">look book</li></a>
+                <a class="text-decoration-none" href=""><li class="list-unstyled">information</li></a>
+                <a class="text-decoration-none" href=""><li class="list-unstyled">instagram wall</li></a>
+                <a class="text-decoration-none" href=""><li class="list-unstyled">modern process</li></a>
+                <a class="text-decoration-none" href=""><li class="list-unstyled">warranty and services</li></a>
+              </div>
+              <div class="col-3">
+                <div class="Information">
+                  <h5 class="text-capitalize fw-bold mb-3">Follow us</h5>
+                </div>
+                <div class="footer-icon my-4">
+                  <i class="fa-brands fa-facebook p-2"></i>
+                  <i class="fa-brands fa-twitter p-2"></i>
+                  <i class="fa-brands fa-youtube p-2"></i>
+                </div>
+                <p class="text-muted fw-bolder">© Copyright 2020 Flexor All Rights Reserved</p>
+              </div>
+              </div>
+            </div>
+          </footer>
+    <!-- ====footer section end===== -->
+</body>
+</html>  
